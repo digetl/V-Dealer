@@ -21,4 +21,8 @@ public class Customer {
     public int getPhoneNumber(){
         return this.phone;
     }
+
+    public void setPhoneNumber(int phone){
+        this.phone = phone;
+    }
 }
