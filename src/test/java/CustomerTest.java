@@ -60,9 +60,15 @@ public class CustomerTest {
     }
 
     @Test
-    public void canSpendMoney() {
+    public void canSpendMoney__canAfford() {
         customer1.spendMoney(1000.00);
         assertEquals(4000, customer1.getMoney(), 0.02);
+    }
+
+    @Test
+    public void canSpendMoney__cantAfford(){
+        customer1.spendMoney(5500);
+        assertEquals(5000, customer1.getMoney(), 0.02);
     }
 
 }
