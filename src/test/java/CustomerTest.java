@@ -9,7 +9,7 @@ public class CustomerTest {
 
     @Before
     public void before(){
-        customer1 = new Customer ("Janine");
+        customer1 = new Customer ("Janine", 07561);
     }
 
     @Test
@@ -24,9 +24,14 @@ public class CustomerTest {
     }
 
     @Test
-    public void customerCantHaveNullNull(){
+    public void customerCantHaveNullName(){
         customer1.setName(null);
         customer1.setName("");
         assertEquals("Janine", customer1.getName());
+    }
+    
+    @Test
+    public void customerHasPhoneNumber(){
+        assertEquals(07561, customer1.getPhoneNumber());
     }
 }
