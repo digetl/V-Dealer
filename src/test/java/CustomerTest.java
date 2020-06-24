@@ -20,6 +20,6 @@ public class CustomerTest {
     @Test
     public void canSetName(){
         customer1.setName("Jenny");
-        assertEquals("Jenny", customer1.setName());
+        assertEquals("Jenny", customer1.getName());
     }
 }
