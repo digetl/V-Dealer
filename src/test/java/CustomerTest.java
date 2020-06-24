@@ -45,9 +45,14 @@ public class CustomerTest {
     public void phoneNumberCantBeNull(){
         customer1.setName(null);
         customer1.setName("");
-        assertEquals(07561, customer1.getPhoneNmber()Te);s
-@    }
+        assertEquals(07561, customer1.getPhoneNumber());
+    }
 
+    @Test
+    public void phoneNumberCantBeString(){
+        customer1.setName("Bob");
+        assertEquals(07561, customer1.getPhoneNumber());
+    }
 
 
 
