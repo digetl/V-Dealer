@@ -45,6 +45,8 @@ public class Customer {
         this.money -= cost;
     }
 
-
+    public int countVehicles(){
+        return customerVehicles.size();
+    }
 
 }

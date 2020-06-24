@@ -2,10 +2,13 @@ import Customers.Customer;
 import org.junit.Before;
 import org.junit.Test;
 
+import java.util.ArrayList;
+
 import static org.junit.Assert.assertEquals;
 
 public class CustomerTest {
     Customer customer1;
+    ArrayList vehicles;
 
     @Before
     public void before(){
