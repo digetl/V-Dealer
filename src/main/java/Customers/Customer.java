@@ -35,6 +35,7 @@ public class Customer {
     }
 
     public void spendMoney(double cost){
+        if (money >= cost)
         this.money -= cost;
     }
 
