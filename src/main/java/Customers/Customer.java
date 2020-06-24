@@ -34,6 +34,10 @@ public class Customer {
         return this.money;
     }
 
+    public void spendMoney(double cost){
+        this.money -= cost;
+    }
+
 
 
 }
