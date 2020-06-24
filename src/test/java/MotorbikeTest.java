@@ -17,4 +17,15 @@ public class MotorbikeTest {
     public void motorbikeHasAPrice(){
         assertEquals(1350.00, motorbike1.getPrice(), 0.02);
     }
+
+    // Check manufacturer
+    @Test
+    public void motorbikeHasaMake(){
+        assertEquals("Honda", motorbike1.getMake());
+    }
+
+    @Test
+    public void motorbikeHasAModel(){
+        assertEquals("Monkey", motorbike1.getModel());
+    }
 }
