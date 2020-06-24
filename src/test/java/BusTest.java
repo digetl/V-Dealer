@@ -9,12 +9,18 @@ public class BusTest {
 
     @Before
     public void before(){
-        bus1 = new Bus(3950.00);
+        bus1 = new Bus(3950.00, "Ford");
     }
 
     @Test
     public void busHasAPrice(){
         assertEquals(3950.00, bus1.getPrice(), 0.02);
+    }
+
+    // Check manufacturer
+    @Test
+    public void busHasaMake(){
+        assertEquals("Ford", bus1.getMake());
     }
 
 }
