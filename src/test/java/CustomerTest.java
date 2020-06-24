@@ -9,11 +9,11 @@ public class CustomerTest {
 
     @Before
     public void before(){
-        customer1 = new Customer ("Janine", "07545", 5000);
+        customer1 = new Customer ("Janine");
     }
 
     @Test
     public void customerHasName(){
-        assertEquals("Janine", customer.getName);
+        assertEquals("Janine", customer1.getName());
     }
 }
