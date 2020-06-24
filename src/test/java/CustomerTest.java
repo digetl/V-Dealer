@@ -22,4 +22,11 @@ public class CustomerTest {
         customer1.setName("Jenny");
         assertEquals("Jenny", customer1.getName());
     }
+
+    @Test
+    public void customerCantHaveNullNull(){
+        customer1.setName(null);
+        customer1.setName("");
+        assertEquals("Janine", customer1.getName());
+    }
 }

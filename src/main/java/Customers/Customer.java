@@ -12,6 +12,7 @@ public class Customer {
     }
 
     public void setName(String name){
-        this.name = name;
+            if(name != null && !name.isEmpty())
+            this.name = name;
     }
 }
