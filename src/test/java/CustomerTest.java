@@ -40,4 +40,15 @@ public class CustomerTest {
         customer1.setPhoneNumber(07001);
         assertEquals(07001, customer1.getPhoneNumber());
     }
+
+    @Test
+    public void phoneNumberCantBeNull(){
+        customer1.setName(null);
+        customer1.setName("");
+        assertEquals(07561, customer1.getPhoneNmber()Te);s
+@    }
+
+
+
+
 }

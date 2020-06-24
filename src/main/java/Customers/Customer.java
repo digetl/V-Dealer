@@ -22,7 +22,11 @@ public class Customer {
         return this.phone;
     }
 
-    public void setPhoneNumber(int phone){
-        this.phone = phone;
+    public void setPhoneNumber(Integer phone){
+
+        if(phone instanceof Integer)
+            this.phone = phone;
     }
+
+
 }
