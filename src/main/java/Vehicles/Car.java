@@ -1,4 +1,4 @@
 package Vehicles;
 
-public class Car extends Vehicles{
+public class Car extends Vehicle{
 }

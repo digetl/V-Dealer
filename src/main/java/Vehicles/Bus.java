@@ -1,4 +1,4 @@
 package Vehicles;
 
-public class Bus extends Vehicles{
+public class Bus extends Vehicle{
 }
