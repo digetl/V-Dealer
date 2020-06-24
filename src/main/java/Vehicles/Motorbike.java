@@ -2,7 +2,7 @@ package Vehicles;
 
 public class Motorbike extends Vehicle{
 
-    public Motorbike(double price, String make) {
-        super(price, make);
+    public Motorbike(double price, String make, String model) {
+        super(price, make, model);
     }
 }
