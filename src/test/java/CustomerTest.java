@@ -59,5 +59,10 @@ public class CustomerTest {
         assertEquals(5000.00, customer1.getMoney(), 0.02);
     }
 
+    @Test
+    public void canSpendMoney() {
+        customer1.spendMoney(1000.00);
+        assertEquals(4000, customer1.getMoney(), 0.02);
+    }
 
 }
