@@ -9,7 +9,7 @@ public class CustomerTest {
 
     @Before
     public void before(){
-        customer1 = new Customer ("Janine", 07561, 5000);
+        customer1 = new Customer ("Janine", 07561, 5000.00);
     }
 
     @Test
@@ -56,7 +56,7 @@ public class CustomerTest {
 
     @Test
     public void hasMoney() {
-        assertEquals(5000, customer1.getMoney());
+        assertEquals(5000.00, customer1.getMoney(), 0.02);
     }
 
 

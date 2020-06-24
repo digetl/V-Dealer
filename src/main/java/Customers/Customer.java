@@ -3,10 +3,12 @@ package Customers;
 public class Customer {
     private String name;
     private int phone;
+    private double money;
 
-    public Customer(String name, int phone){
+    public Customer(String name, int phone, double money){
         this.name = name;
         this.phone = phone;
+        this.money = money;
     }
 
     public String getName() {
@@ -22,11 +24,16 @@ public class Customer {
         return this.phone;
     }
 
-    public void setPhoneNumber(Integer phone){
+    public void setPhoneNumber(Integer phone) {
 
-        if(phone instanceof Integer)
+        if (phone instanceof Integer)
             this.phone = phone;
     }
+
+    public double getMoney(){
+        return this.money;
+    }
+
 
 
 }
