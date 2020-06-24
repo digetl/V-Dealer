@@ -2,9 +2,11 @@ package Customers;
 
 public class Customer {
     private String name;
+    private int phone;
 
-    public Customer(String name){
+    public Customer(String name, int phone){
         this.name = name;
+        this.phone = phone;
     }
 
     public String getName() {
@@ -12,9 +14,11 @@ public class Customer {
     }
 
     public void setName(String name){
-            if(name != null && !name.isEmpty())
+        if(name != null && !name.isEmpty())
             this.name = name;
     }
 
-
+    public int getPhoneNumber(){
+        return this.phone;
+    }
 }
