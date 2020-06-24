@@ -9,7 +9,7 @@ public class BusTest {
 
     @Before
     public void before(){
-        bus1 = new Bus(3950.00, "Ford");
+        bus1 = new Bus(3950.00, "Ford", "Transit100");
     }
 
     @Test
@@ -21,6 +21,11 @@ public class BusTest {
     @Test
     public void busHasaMake(){
         assertEquals("Ford", bus1.getMake());
+    }
+
+    @Test
+    public void busHasAModel(){
+        assertEquals("Transit 100", bus1.getModel());
     }
 
 }
