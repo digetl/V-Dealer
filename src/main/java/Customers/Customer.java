@@ -1,14 +1,20 @@
 package Customers;
 
+import Vehicles.Vehicle;
+
+import java.util.ArrayList;
+
 public class Customer {
     private String name;
     private int phone;
     private double money;
+    private ArrayList<Vehicle> customerVehicles;
 
     public Customer(String name, int phone, double money){
         this.name = name;
         this.phone = phone;
         this.money = money;
+        this.customerVehicles = new ArrayList<Vehicle>();
     }
 
     public String getName() {

@@ -71,4 +71,9 @@ public class CustomerTest {
         assertEquals(5000, customer1.getMoney(), 0.02);
     }
 
+    @Test
+    public void hasNoVehiclesToStart() {
+        assertEquals(0, customer1.countVehicles());
+    }
+
 }
